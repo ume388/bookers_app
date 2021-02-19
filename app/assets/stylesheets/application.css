@@ -18,3 +18,36 @@
   margin: 0;
   padding: 0;
 }
+
+html{
+  display: block;
+}
+
+head{
+  display: none;
+}
+
+body{
+  background-color: #fff;
+  color: #333;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+h1{
+  display: block;
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+p{
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+strong{
+  font-weight: bold
+}
