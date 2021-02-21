@@ -1,19 +1,19 @@
 <main>
-  <h1>Editing Book</h1>
-  <%= form_for(@book) do |b| %>
-    <h4>Tilte</h4>
-    <%= b.text_field :title, class: "book_title" %>
+<h1>Editing Book</h1>
+<%= form_for(@book) do |b| %>
+  <h4>Tilte</h4>
+  <%= b.text_field :title, class: "book_title" %>
+  
+  <h4>Body</h4>
+  <%= b.text_area :body, class: "book_body" %>
     
-    <h4>Body</h4>
-    <%= b.text_area :body, class: "book_body" %>
+  <!--アップデートボタン-->
+  <%= b.submit 'Update Book' %>
     
-    <!--アップデートボタン-->
-    <%= b.submit 'Update Book' %>
+  <!--詳細へのリンク-->
+  <%= link_to "Show", book_path(@book), class: "show_#{@book.id}" %>
     
-    <!--詳細へのリンク-->
-    <%= link_to "Show", book_path(@book), class: "show_#{@book.id}" %>
-    
-    <!--投稿一覧へのリンク-->
-    <%= link_to "Back", books_path, class: "back" %>
-  <% end 
+  <!--投稿一覧へのリンク-->
+  <%= link_to "Back", books_path, class: "back" %>
+<% end %>
 </main>
