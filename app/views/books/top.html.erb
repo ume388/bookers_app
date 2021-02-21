@@ -1,11 +1,5 @@
-<!--トップページ-->
-<!DOCTYPE htm
-<html>
-  <head>
-    <title>WebCampBackendNew</title>
-  </head>
-  
-  <body>
+<!--Topページ-->
+  <main>
     <h1>
       ようこそ
       <strong>Bookers</strong>
@@ -18,8 +12,6 @@
     </p>
     <p>印象を共有し交換することができます</p>
   
-    <p>
-      <a href="/books">start</a>
-    </p>
-  </body>
+    <%= link_to "start", books_path %>
+  </main>
 </html>
