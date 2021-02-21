@@ -20,4 +20,13 @@
     </tr>
   <% end %>
 </table>
+
+<h3>New Book</h3>
+<%= form_for(@book) do |b| %>
+  <h4 class="form_field">Title</h4>
+  <%= b.text_field :title, class: "book_title" %>
+  <h4 class="form_field">Body</h4>
+  <%= b.text_area :body, class: "book_body" %>
+  <p><%= b.submit 'Create Book' %></p>
+<% end %>
 </main>
