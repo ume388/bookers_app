@@ -21,12 +21,13 @@
   <% end %>
 </table>
 
-<h3>New Book</h3>
-<%= form_for(@book) do |b| %>
-  <h4 class="form_field">Title</h4>
-  <%= b.text_field :title, class: "book_title" %>
-  <h4 class="form_field">Body</h4>
-  <%= b.text_area :body, class: "book_body" %>
-  <p><%= b.submit 'Create Book' %></p>
+<h2>New Book</h2>
+<%= form_with model:@book, local:true do |f| %>
+  <h4>Title</h4>
+  <%= f.text_field :title %>
+  <h4>Body</h4>
+  <%= f.text_area :body %>
+
+  <%= f.submit 'Create Book' %>
 <% end %>
 </main>
