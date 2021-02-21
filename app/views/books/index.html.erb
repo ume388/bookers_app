@@ -7,25 +7,27 @@
 <h3>Books</h3>
 
 <table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Body</th>
-<th></th>
-</tr>
-</thead>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th></th>
+    </tr>
+  </thead>
 
-<tbody>
-<% @books.each do |book| %>
-<tr> 
-<td>
-<%= book.title %>
-</td>
-<td>
-<%= book.body %>
-</td>
-<td></td>
-</tr>  
-<% end %>
-</tbody>   
+  <tbody>
+    <% @books.each do |book| %>
+    <tr> 
+      <td>
+      <%= book.title %>
+      </td>
+      <td>
+      <%= book.body %>
+      </td>
+      <td>
+        <%= link_to book.title, "/books/#{book.id}" %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>   
 </table>
