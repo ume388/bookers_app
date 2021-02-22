@@ -20,33 +20,41 @@
   box-sizing: border-box;
 }
 
-html{
-  display: block;
-}
-
-head{
-  display: none;
-}
-
-body{
-  background-color: #fff;
-  color: #333;
-  font-size: 13px;
+main{
+  width: 100%;
+  margin: 3%;
   line-height: 18px;
-  margin: 33px;
 }
 
 h1{
   display: block;
-  font-size: 2em;
-  margin: 0.67em 0;
+  padding: 2% 0;
+}
+
+table{
+  padding: 1%;
+  width: 50%;
+}
+
+table th{
+  padding-bottom: 1%;
+}
+
+table td{
+  padding-left: 1%;
+  padding-bottom: 2%;
+}
+
+.book_title{
+  margin-bottom: 1%;
+}
+
+.book_body{
+  margin-bottom: 1%;
 }
 
 p{
-  display: block;
-  font-size: 13px;
-  line-height: 18px;
-  margin: 33px;
+  margin: 1%;
 }
 
 strong{
