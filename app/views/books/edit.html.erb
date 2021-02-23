@@ -8,11 +8,12 @@
   <%= b.text_area :body, class: "book_body" %>
     
   <!--アップデートボタン-->
-  <%= b.submit 'Update Book' %>
-    
+  <p>
+    <%= b.submit 'Update Book' %>
+  </p>  
   <!--詳細へのリンク-->
   <%= link_to "Show", book_path(@book), class: "show_#{@book.id}" %>
-    
+  <%= "|" %>
   <!--投稿一覧へのリンク-->
   <%= link_to "Back", books_path, class: "back" %>
 <% end %>
