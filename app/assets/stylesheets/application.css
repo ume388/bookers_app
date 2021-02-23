@@ -34,8 +34,11 @@ h1{
   font-size: 26px;
 }
 
-p{
+p, ol, ul{
   margin: 33px;
+  line-height: 18px;
+  font-size: 13px;
+  font-family: verdana, arial, helvetica, sans-serif;
 }
 
 th{
@@ -66,7 +69,18 @@ h2{
   margin-bottom: 20px;
   padding: 7px;
   padding-bottom: 0px;
-  background-color: #f0f0f0
+  font-size: 12px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2{
+  font-size: 12px;
+  background-color: red;
+  color: white;
+}
+
+#error_explanation ul li{
+  list-style: square;
 }
 
 strong{
