@@ -8,9 +8,8 @@
   <%= b.text_area :body, class: "book_body" %>
     
   <!--アップデートボタン-->
-  <p>
-    <%= b.submit 'Update Book' %>
-  </p>  
+  <div class="c"><%= b.submit 'Update Book' %></div>
+  
   <!--詳細へのリンク-->
   <%= link_to "Show", book_path(@book), class: "show_#{@book.id}" %>
   <%= "|" %>
