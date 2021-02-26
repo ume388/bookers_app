@@ -41,7 +41,18 @@ p, ol, ul{
   font-family: verdana, arial, helvetica, sans-serif;
 }
 
+table{
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+}
+
 th{
+  display: table-cell;
+  font-weight: bold;
   padding: 1px 1px 5px;
 }
 
@@ -74,12 +85,18 @@ h2{
 }
 
 #error_explanation h2{
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
   font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
   background-color: red;
   color: white;
 }
 
 #error_explanation ul li{
+  font-size: 12px;
   list-style: square;
 }
 
