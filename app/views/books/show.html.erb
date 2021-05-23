@@ -1,8 +1,10 @@
 <main>
+  <!--フラッシュメッセージの表示-->
   <p id="notice">
     <%= notice %>
   </p>
   
+  <!--本の情報表示部分-->
   <p>
     <strong>Title:</strong>
     <%= @book.title %>
@@ -12,6 +14,7 @@
     <%= @book.body %>
   </p>
 
+  <!--各ページへのリンク-->
   <%= link_to "Edit", edit_book_path(@book), class: "edit_#{@book.id}" %>
   <%= "|" %>
   <%= link_to "Back", books_path, class: "back" %>
