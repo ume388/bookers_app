@@ -1,10 +1,11 @@
+<!--本一覧画面-->
 <main>
 <p id="notice">
   <%= notice %>
 </p>
 
 <h1>Books</h1>
-
+<!--投稿された本情報のリスト化-->
 <table>
   <thread>
     <tr>
@@ -29,6 +30,7 @@
   </tbody>
 </table>
 
+<!--新規投稿フォーム-->
 <h2>New Book</h2>
 <%= form_with model:@book, local:true do |f| %>
 
