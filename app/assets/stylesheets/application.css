@@ -66,14 +66,17 @@ h2{
   margin: 16.185px 0px;
 }
 
+/*投稿フォーム部分*/
 .create_action{
   margin: 0px 0px 10px;
 }
 
+/*フラッシュメッセージ*/
 #notice{
   color: green;
 }
 
+/*エラーメッセージ部分*/
 #error_explanation{
   width: 450px;
   border: 2px solid red;
